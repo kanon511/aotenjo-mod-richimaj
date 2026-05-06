@@ -652,21 +652,21 @@ CS.Aotenjo.CustomYakuBuilder.RegisterCustomYaku(
 )
 
 -- 青天和 暂定不添加
-CS.Aotenjo.CustomYakuBuilder.RegisterCustomYaku(
-    mod_id .. ":QingTianHu",
-    888,
-    1,
-    688,
-    function(perm, player)
-        richi_artifact_module.get_player_richi_artifact(player)
-        return player:GetPlayerWind() == 1 and menqianqing_func(perm, player, 1) and false
-    end,
-    { mod_id .. ":MenQianQing", mod_id .. ":MenQingZiMo" },
-    yaku_applicable_systems,
-    { 0, 1, 2, 3 },
-    CS.Aotenjo.Rarity.ANCIENT,
-    "234m345m123p333s66s"
-)
+-- CS.Aotenjo.CustomYakuBuilder.RegisterCustomYaku(
+--     mod_id .. ":QingTianHu",
+--     888,
+--     1,
+--     688,
+--     function(perm, player)
+--         richi_artifact_module.get_player_richi_artifact(player)
+--         return player:GetPlayerWind() == 1 and menqianqing_func(perm, player, 1) and false
+--     end,
+--     { mod_id .. ":MenQianQing", mod_id .. ":MenQingZiMo" },
+--     yaku_applicable_systems,
+--     { 0, 1, 2, 3 },
+--     CS.Aotenjo.Rarity.ANCIENT,
+--     "234m345m123p333s66s"
+-- )
 
 -- 暗刻
 CS.Aotenjo.CustomYakuBuilder.RegisterCustomYaku(
